@@ -24,6 +24,13 @@ h1 {
     margin: 0 1rem;
 }
 
+h2{
+  color: #471d2d;
+  font-size: 1rem;
+  margin: 5% auto 5% auto;
+  
+}
+
 ul{
 	background-color: lightcoral;
 	border-bottom: 1px solid #471d2d;
@@ -64,24 +71,27 @@ aside {
 	font-weight: bold;
 	height: 67vh;
 	text-align: left;
-	width: 15%;
+	max-width: 15%;
+    margin-left: 1rem;
 }
 
 article {
 	background-color: antiquewhite;
-	border-left: 1px solid #471d2d;
 	float: right;
 	font-weight: bold;
 	height: 67vh;
 	text-align: left;
-	width: 80%;
+	max-width: 80%;
+    margin-top: .5rem;
+
 }
 
 section {
 	background: lightcoral;
 	border: 1px solid #471d2d;
-	margin: 3rem;
-	padding: 3rem;
+    max-width: 90%;
+	margin: 1rem;
+	padding: .5rem;
 }
 
 footer {
@@ -96,6 +106,31 @@ footer {
 	width: 100%;
 }
 
+p{
+   text-align: justify;
+}
+
+.text, p{
+  margin-bottom: 1.2rem;
+}
+
+.flex-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+
+.kepek{
+  width: 40%;
+  height: 12%;
+  align-self: center;
+}
+
 @media (min-width: 640px){
   h1 {
     font-size: 2.5rem;
@@ -104,9 +139,12 @@ footer {
   font-size: 90%;
   margin: .8% 1%;
   }
+  section{
+  max-width: 70%;
+  }
 }
 
-@media (max-height: 600px){
+@media (max-height: 850px){
   h1 {
     font-size: 2.5rem;
   }
@@ -114,4 +152,17 @@ footer {
   font-size: 50%;
   margin: .8% 1%;
   }
+  section{
+    margin-top: 0;
+    padding: 0;
+    padding-top: .1rem;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+    font-size:0.7rem;
+    font-size: 0.1rem;
+  }
+  article {
+    height: 67vh;
 }
